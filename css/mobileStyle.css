@@ -1,0 +1,145 @@
+.body,
+body {
+    background-color: black !important;
+}
+
+#pages>div {
+    display: none;
+}
+
+#pages>div.current {
+    display: block;
+}
+
+#logo {
+    max-width: 15vmax !important;
+    max-height: 10vmax !important;
+}
+
+@media screen and (min-width: 770px) {
+    a,
+    p,
+    li {
+        font-size: 18px !important;
+    }
+    h4 {
+        font-size: 27px !important;
+    }
+    h6 {
+        margin-top: 5px !important;
+        font-size: 22px !important;
+    }
+    .seccion,
+    footer {
+        width: 60vw;
+    }
+    .video {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    a,
+    p,
+    li {
+        font-size: 12px !important;
+    }
+    h4 {
+        font-size: 18px !important;
+    }
+    h6 {
+        margin-top: 1px !important;
+        font-size: 15px !important;
+    }
+    .desktop {
+        display: none;
+    }
+}
+
+@media (orientation: landscape) {
+    #landscape {
+        display: block;
+    }
+    #portrait {
+        display: none;
+    }
+}
+
+@media (orientation: portrait) {
+    #landscape {
+        display: none;
+    }
+    #portrait {
+        display: block;
+    }
+}
+
+@keyframes seccion {
+    0% {
+        background-color: transparent;
+        left: 200px;
+        top: 0px;
+    }
+    100% {
+        background-color: transparent;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+/* The element to apply the animation to */
+
+.seccion {
+    position: relative;
+    background-color: transparent;
+    animation-name: seccion;
+    animation-duration: 2s;
+}
+
+
+/* The animation code */
+
+@keyframes encabezado {
+    0% {
+        color: darkorange;
+    }
+    25% {
+        color: orange;
+    }
+    50% {
+        color: yellow;
+    }
+    75% {
+        color: orange;
+    }
+    100% {
+        color: darkorange;
+    }
+}
+
+
+/* The element to apply the animation to */
+
+header {
+    color: darkorange !important;
+    animation-name: encabezado;
+    animation-duration: 2s;
+    z-index: 1049 !important;
+    background-color: black !important;
+    padding-top: 0.5rem;
+}
+
+
+/*.Header {
+    z-index: 1049 !important;
+    background-color: black !important;
+}*/
+
+
+/*https://mycolor.space/gradient?ori=circle&hex=%23051937&hex2=%23A8EB12&sub=1*/
+
+.fondo,
+#pages {
+    background-color: black !important;
+}
